@@ -107,7 +107,7 @@ function getDetails(e) {
     }
     else return
 
-    let url = `https://restcountries.com/v3.1/name/${country_name}`
+    let url = `https://restcountries.com/v3.1/name/${country_name}?fullText=true`
     console.log(url);
     fetch(url)
     .then(response => response.json())
